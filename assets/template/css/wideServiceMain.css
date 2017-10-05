@@ -1,0 +1,196 @@
+.content ul.b-filter__list {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 0px;
+    display: table;
+    width: 100%;
+}
+.b-filter__list .b-filter__item {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    display: table-cell;
+}
+.b-filter__list .b-filter__item:first-child {
+    margin-right: 22px;
+}
+.b-filter__list .b-filter__item a{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #2f3587;
+    font: 18px "Circe Bold";
+    margin: 5px 6px 5px;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid #2f3587;
+    display: block;
+    line-height: 100%;
+}
+.b-filter__list .b-filter__item.first a{
+    margin-left: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.b-filter__list .b-filter__item.last a{
+    margin-right: 0;
+}
+.b-filter__list .b-filter__item.active a {
+    cursor: text;
+}
+.b-filter__list .b-filter__item.active a, .b-filter__list .b-filter__item:hover a {
+    background: #2f3587 none repeat scroll 0 0;
+    color: #fff;
+}
+@media (max-width: 700px) {
+    .content ul.b-filter__list{
+        display: block;
+    }
+    .b-filter__list .b-filter__item {
+        display: block;
+    }
+    .b-filter__list .b-filter__item:last-child,
+    .b-filter__list .b-filter__item:first-child{
+        margin: 0;
+    }
+    .b-filter__list .b-filter__item a{
+        margin: 10px 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.service__list{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.service__list *{
+    box-sizing: border-box;
+}
+.service__item{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+@media (max-width: 700px){
+    .service__item {
+        float: none;
+        width: 100%;
+    }
+}
+.service__card{
+    max-width: 290px;
+    height: 220px;
+    position: relative;
+    margin: 0 auto;
+}
+.service__image{
+    height: 100%;
+    background-position: 0 center;
+}
+.service__item a{
+    position: static;
+}
+.service__item img{
+    width: 100%;
+}
+.service__list:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.service__caption{
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px #ffc61a solid;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    min-height: 45px;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+@media (min-width: 700px) and (max-width: 999px){
+    .service__caption {
+        font-size: 16px;
+    }
+}
+.service__info{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent url('/assets/images/caption__gradient.png') top left repeat-x;
+    color: #fff;
+    padding: 45px 18px 12px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    height: 89px;
+    overflow: hidden;
+}
+.service__card:hover .service__info{
+    height: 100%;
+    background: rgba(47,53,135,0.75);
+    transition: all 0.3s ease 0s;
+    padding-top: 14px;
+}
+@media (max-width: 700px){
+    .service__card .service__info{
+        height: 100%;
+        background: rgba(47,53,135,0.75);
+        transition: all 0.3s ease 0s;
+        padding-top: 14px;
+    }
+}
+.service__text {
+    font-size: 16px;
+    height: 74px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.service__card .service__btn .btn_rd_default span{
+    font-size: 21px !important;
+    padding: 10px 26px 8px !important;
+}
+.form-block{
+    margin-top: 24px;
+}
+
+.models.portfolio_nav.nav_bordered{
+    margin: 0;
+}
+.nav_bordered .additional_nav li a,
+.nav_bordered .additional_nav .active a,
+.nav_bordered .additional_nav li:hover a{
+    border: 1px solid #2f3587;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li a{
+    margin: 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li:first-child{
+    float: none;
+    margin-left: 0;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li:first-child a {
+    margin-left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li:last-child{
+    float: none;
+    margin-right: 0;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li:last-child a {
+    margin-right: 0;
+}
+.models.portfolio_nav.nav_bordered .additional_nav li{
+    display: table-cell;
+    margin: 0;
+}
