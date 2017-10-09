@@ -83,7 +83,7 @@
 .promo-category__card:hover .promo-category__caption{
     border-bottom: 1px #ffc61a solid;
 }
-@media (max-width: 700px){
+@media (max-width: 993px){
     .promo-category__card .promo-category__info{
         height: 100%;
         background: rgba(47,53,135,0.75);
@@ -157,7 +157,6 @@
 .advantages__service{
     margin-top: 43px;
     margin-left: 5px;
-    width: 99%;
     margin-bottom: 27px;
 }
 .advantages__item{
@@ -173,9 +172,6 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.advantages__image{
-    margin-bottom: -7px;
-}
 .advantages__signature{
     color: #24a0d4;
     font-family: "Circe Light";
@@ -186,4 +182,10 @@
 }
 .advantages__images{
     margin-bottom: 28px;
+}
+@media (max-width: 993px) {
+    .advantages__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
