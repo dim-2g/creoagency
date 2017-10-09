@@ -1,0 +1,189 @@
+.promo-category__list{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.promo-category__list *{
+    box-sizing: border-box;
+}
+.promo-category__item{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+@media (max-width: 993px){
+    .promo-category__item {
+        float: none;
+        width: 100%;
+    }
+}
+.promo-category__card{
+    max-width: 290px;
+    height: 290px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.promo-category__image{
+    height: 100%;
+    background-position: 0 center;
+}
+.promo-category__item a{
+    position: static;
+}
+.promo-category__item img{
+    width: 100%;
+}
+.promo-category__list:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.promo-category__caption{
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    min-height: 32px;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+/*
+@media (min-width: 700px) and (max-width: 999px){
+    .promo-category__caption {
+        font-size: 16px;
+    }
+}*/
+.promo-category__info{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent url('/assets/images/caption__gradient.png') top left repeat-x;
+    color: #fff;
+    padding: 52px 18px 12px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    height: 100%;
+    overflow: hidden;
+    transform: translateY(204px);
+}
+.promo-category__card:hover .promo-category__info{
+    height: 100%;
+    background: rgba(47,53,135,0.75);
+    transition: all 0.3s ease 0s;
+    padding-top: 20px;
+    transform: translateY(0);
+}
+
+.promo-category__card:hover .promo-category__caption{
+    border-bottom: 1px #ffc61a solid;
+}
+@media (max-width: 700px){
+    .promo-category__card .promo-category__info{
+        height: 100%;
+        background: rgba(47,53,135,0.75);
+        transition: all 0.3s ease 0s;
+        padding-top: 20px;
+        transform: translateY(0);
+    }
+    .promo-category__card .promo-category__caption{
+        border-bottom: 1px #ffc61a solid;
+    }
+}
+.promo-category__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 130%;
+}
+.promo-category__card .promo-category__btn .btn_rd_default span{
+    padding: 10px 26px 8px !important;
+}
+.promo-category__btn {
+    bottom: 12px;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+}
+.promo-category__btn .btn_rd_default{
+    width: 100%;
+}
+.promo-category__list-main .promo-category__btn .btn_rd_default{
+    text-transform: uppercase;
+}
+.promo-question__bg{
+    background: transparent url("/assets/images/promo/promo-question__bg.jpg") repeat scroll 0 0;
+    height: 290px;
+    width: 290px;
+}
+.promo-question__title{
+    color: #2f3587;
+    font-family: "Circe Light";
+    font-size: 22px;
+    margin-bottom: 22px;
+    padding-top: 34px;
+    text-transform: uppercase;
+}
+.promo-question__image {
+    background: transparent url("/assets/images/promo/promo-question__phone.png") repeat scroll 0 0;
+    height: 84px;
+    margin-bottom: 16px;
+    margin-left: 112px;
+    width: 78px;
+}
+.promo-question__lead {
+    color: #2f3587;
+    font-family: "Circe Light";
+    font-size: 22px;
+    padding-top: 16px;
+}
+.promo-question__card .btn_rd_default span {
+    font-size: 18px;
+    padding: 14px 25px !important;
+}
+
+.advantages__caption{
+    text-align: center;
+    color: #24a0d4;
+    font-family: 'Circe Light';
+    font-size: 28px;
+    margin-bottom: 23px;
+}
+.advantages__service{
+    margin-top: 43px;
+    margin-left: 5px;
+    width: 99%;
+    margin-bottom: 27px;
+}
+.advantages__item{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    vertical-align: top;
+}
+.advantages__name{
+    font-family: 'Circe Light';
+    color: #2f3587;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advantages__image{
+    margin-bottom: -7px;
+}
+.advantages__signature{
+    color: #24a0d4;
+    font-family: "Circe Light";
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-left: -3px;
+    text-align: center;
+}
+.advantages__images{
+    margin-bottom: 28px;
+}
