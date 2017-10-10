@@ -1,0 +1,44 @@
+/*общие повторяющиеся блоки*/
+
+.advantages__caption{
+    text-align: center;
+    color: #24a0d4;
+    font-family: 'Circe Light';
+    font-size: 28px;
+    margin-bottom: 23px;
+}
+.advantages__service{
+    margin-top: 43px;
+    margin-left: 5px;
+    margin-bottom: 27px;
+}
+.advantages__item{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    vertical-align: top;
+}
+.advantages__name{
+    font-family: 'Circe Light';
+    color: #2f3587;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advantages__signature{
+    color: #24a0d4;
+    font-family: "Circe Light";
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-left: -3px;
+    text-align: center;
+}
+.advantages__images{
+    margin-bottom: 28px;
+}
+@media (max-width: 993px) {
+    .advantages__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

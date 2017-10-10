@@ -24,9 +24,20 @@
                     <div class="container">
                         <div class="content full_width" style="margin-bottom: 20px;">
 
+
                             <link href="assets/template/css/common.css" rel="stylesheet">
                             <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-                            <div class="promo-category__list promo-category__list-main">
+                            <div class="b-filter">
+                                <ul class="b-filter__list">
+                                    <li class="b-filter__item current active"><a href="#">Все</a></li>
+                                    <li class="b-filter__item first"><a href="#">Комбинезоны</a></li>
+                                    <li class="b-filter__item"><a href="#">Платья</a></li>
+                                    <li class="b-filter__item"><a href="#" >Футболки</a></li>
+                                    <li class="b-filter__item"><a href="#" >Толстовки</a></li>
+                                    <li class="b-filter__item last"><a href="#">Головные уборы</a></li>
+                                </ul>
+                            </div>
+                            <div class="promo-category__list">
 
                                 <div class="promo-category__item">
                                     <div class="promo-category__card">
@@ -69,7 +80,7 @@
                                         <div class="promo-category__image" style="background-image:url('/temp/promo/main/main3.jpg')"></div>
                                         <div class="promo-category__info">
                                             <div class="promo-category__caption">
-                                                Промо-стойки
+                                                Стандартные платья с нанесением логотипа
                                             </div>
                                             <div class="promo-category__text">
                                                 Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
@@ -105,7 +116,7 @@
                                         <div class="promo-category__image" style="background-image:url('/temp/promo/main/main5.jpg')"></div>
                                         <div class="promo-category__info">
                                             <div class="promo-category__caption">
-                                                Полиграфия
+                                                Комбинезоны с нанесением логотипа
                                             </div>
                                             <div class="promo-category__text">
                                                 Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
@@ -174,7 +185,9 @@
                         </div>
                         <div class="clear"></div>
                     </div><!-- .container-->
+                    <div class="clear"></div>
                 </div><!-- .width-site-->
+                {include 'file:chunks/forms/requestForm.tpl'}
             </div><!-- .middle-->
         </div><!-- .wrapper -->
         {include 'file:chunks/main/footer.tpl'}

@@ -41,15 +41,19 @@
     display: table;
     content: "";
 }
+
 .promo-category__caption{
     font-family: 'Circe Bold', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
     padding-bottom: 3px;
-    text-transform: uppercase;
     min-height: 32px;
     line-height: 110%;
     margin-bottom: 10px;
+}
+.promo-category__list-main .promo-category__caption{
+    font-size: 22px;
+    text-transform: uppercase;
 }
 /*
 @media (min-width: 700px) and (max-width: 999px){
@@ -63,9 +67,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: transparent url('/assets/images/caption__gradient.png') top left repeat-x;
+    background: transparent url('/assets/template/images/promo/caption__gradient.png') top left repeat-x;
     color: #fff;
-    padding: 52px 18px 12px;
+    padding: 45px 18px 12px;
     transition: all 0.3s ease 0s;
     opacity: 1;
     height: 100%;
@@ -76,12 +80,18 @@
     height: 100%;
     background: rgba(47,53,135,0.75);
     transition: all 0.3s ease 0s;
-    padding-top: 20px;
+    padding-top: 14px;
     transform: translateY(0);
 }
 
 .promo-category__card:hover .promo-category__caption{
     border-bottom: 1px #ffc61a solid;
+}
+.promo-category__list-main .promo-category__info{
+    padding-top: 52px;
+}
+.promo-category__list-main .promo-category__card:hover .promo-category__info{
+    padding-top: 20px;
 }
 @media (max-width: 993px){
     .promo-category__card .promo-category__info{
@@ -117,7 +127,7 @@
     text-transform: uppercase;
 }
 .promo-question__bg{
-    background: transparent url("/assets/images/promo/promo-question__bg.jpg") repeat scroll 0 0;
+    background: transparent url("/assets/template/images/promo/promo-question__bg.jpg") repeat scroll 0 0;
     height: 290px;
     width: 290px;
 }
@@ -130,7 +140,7 @@
     text-transform: uppercase;
 }
 .promo-question__image {
-    background: transparent url("/assets/images/promo/promo-question__phone.png") repeat scroll 0 0;
+    background: transparent url("/assets/template/images/promo/promo-question__phone.png") repeat scroll 0 0;
     height: 84px;
     margin-bottom: 16px;
     margin-left: 112px;
@@ -147,45 +157,36 @@
     padding: 14px 25px !important;
 }
 
-.advantages__caption{
-    text-align: center;
-    color: #24a0d4;
-    font-family: 'Circe Light';
-    font-size: 28px;
-    margin-bottom: 23px;
+
+.content ul.b-filter__list {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: -10px;
 }
-.advantages__service{
-    margin-top: 43px;
-    margin-left: 5px;
-    margin-bottom: 27px;
+.b-filter__list .b-filter__item {
+    width: auto;
 }
-.advantages__item{
-    display: inline-block;
-    text-align: center;
-    width: 25%;
-    vertical-align: top;
+.b-filter__list .b-filter__item:first-child {
+    margin-right: 22px;
 }
-.advantages__name{
-    font-family: 'Circe Light';
+.b-filter__list .b-filter__item a{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #2f3587;
-    font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: inline-block;
+    font: 18px "Circe Bold";
+    margin: 5px 0 5px;
+    padding: 5px 20px;
+    text-decoration: none;
 }
-.advantages__signature{
-    color: #24a0d4;
-    font-family: "Circe Light";
-    font-size: 16px;
-    letter-spacing: 0.3px;
-    margin-left: -3px;
-    text-align: center;
+.b-filter__list .b-filter__item.active a {
+    cursor: text;
 }
-.advantages__images{
-    margin-bottom: 28px;
+.b-filter__list .b-filter__item.active a, .b-filter__list .b-filter__item:hover a {
+    background: #2f3587 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
 }
-@media (max-width: 993px) {
-    .advantages__item {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+
+.form-block {
+    margin-top: 24px;
 }
