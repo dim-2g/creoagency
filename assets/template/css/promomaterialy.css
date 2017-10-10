@@ -1,3 +1,4 @@
+/*
 .promo-category__list{
     margin-left: -15px;
     margin-right: -15px;
@@ -55,12 +56,7 @@
     font-size: 22px;
     text-transform: uppercase;
 }
-/*
-@media (min-width: 700px) and (max-width: 999px){
-    .promo-category__caption {
-        font-size: 16px;
-    }
-}*/
+
 .promo-category__info{
     display: block;
     position: absolute;
@@ -126,6 +122,50 @@
 .promo-category__list-main .promo-category__btn .btn_rd_default{
     text-transform: uppercase;
 }
+*/
+.advantages__caption{
+    text-align: center;
+    color: #24a0d4;
+    font-family: 'Circe Light';
+    font-size: 28px;
+    margin-bottom: 23px;
+}
+.advantages__service{
+    margin-top: 43px;
+    margin-left: 5px;
+    margin-bottom: 27px;
+}
+.advantages__item{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    vertical-align: top;
+}
+.advantages__name{
+    font-family: 'Circe Light';
+    color: #2f3587;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advantages__signature{
+    color: #24a0d4;
+    font-family: "Circe Light";
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-left: -3px;
+    text-align: center;
+}
+.advantages__images{
+    margin-bottom: 28px;
+}
+@media (max-width: 993px) {
+    .advantages__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
 .promo-question__bg{
     background: transparent url("/assets/template/images/promo/promo-question__bg.jpg") repeat scroll 0 0;
     height: 290px;
@@ -189,4 +229,139 @@
 
 .form-block {
     margin-top: 24px;
+}
+
+
+
+.promo-product__list *{
+    box-sizing: border-box;
+}
+.promo-product__item{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 993px){
+    .promo-product__item {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+.promo-product__card{
+    max-width: 290px;
+    height: 290px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.promo-product__image{
+    height: 100%;
+    background-position: 0 center;
+    background-size: cover;
+}
+.promo-product__item a{
+    position: static;
+}
+.promo-product__item img{
+    width: 100%;
+}
+.promo-product__list:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.promo-product__caption{
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 3px;
+    min-height: 32px;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+.promo-product__info{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent url('/assets/template/images/promo/caption__gradient.png') top left repeat-x;
+    color: #fff;
+    padding: 45px 18px 12px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+    height: 100%;
+    overflow: hidden;
+    transform: translateY(204px);
+}
+.promo-product__card:hover .promo-product__info{
+    height: 100%;
+    background: rgba(47,53,135,0.75);
+    transition: all 0.3s ease 0s;
+    padding-top: 14px;
+    transform: translateY(0);
+}
+
+.promo-product__card:hover .promo-product__caption{
+    border-bottom: 1px #ffc61a solid;
+}
+@media (max-width: 993px){
+    .promo-product__card .promo-product__info{
+        height: 100%;
+        background: rgba(47,53,135,0.75);
+        transition: all 0.3s ease 0s;
+        padding-top: 20px;
+        transform: translateY(0);
+    }
+    .promo-product__card .promo-product__caption{
+        border-bottom: 1px #ffc61a solid;
+    }
+}
+.promo-product__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 130%;
+}
+.promo-product__card .promo-product__btn .btn_rd_default span{
+    padding: 10px 26px 8px !important;
+}
+.promo-product__btn {
+    bottom: 12px;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+}
+.promo-product__btn .btn_rd_default{
+    width: 100%;
+}
+
+
+/*Для карусели owl отключаем свойства*/
+.owl-item .promo-product__item{
+    float: none;
+    width: auto;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+}
+.owl-item .promo-product__card{
+    max-width: 270px;
+    height: 270px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.owl-item .promo-product__info{
+    transform: translateY(184px);
 }

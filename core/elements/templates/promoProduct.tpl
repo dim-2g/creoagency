@@ -25,7 +25,7 @@
                         <div class="content full_width" style="margin-bottom: 20px;">
 
 
-                            <link href="assets/template/css/common.css" rel="stylesheet">
+                            <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
                             <link href="assets/template/css/promoProduct.css" rel="stylesheet">
                             <script src="assets/template/js/promoProduct.js"></script>
                             <div class="product__card">
@@ -45,6 +45,30 @@
                                     <div class="product__title">Печатаем наклейки на пленочной основе на собственном производстве.</div>
                                     <p>Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. </p>
 
+                                    <div class="logo__title">Можем оформить в вашем стиле</div>
+                                    <div class="property__item">
+                                        <span class="property__key">Размеры (ВхГхШ):</span>
+                                        <span class="property__value">150 см х 30 см х 60 см</span>
+                                    </div>
+                                    <div class="property__item">
+                                        <span class="property__key">Материалы:</span>
+                                        <span class="property__value">алюминиевый каркас, пластик</span>
+                                    </div>
+                                    <div class="property__item">
+                                        <span class="property__key">Цвета:</span>
+                                        <span class="property__value">
+                                        <a class="color__item color__item--1 active" href="#"></a>
+                                        <a class="color__item color__item--2 " href="#"></a>
+                                        <a class="color__item color__item--3 " href="#"></a>
+                                        <a class="color__item color__item--4 " href="#"></a>
+                                        <a class="color__item color__item--5 " href="#"></a>
+                                        <a class="color__item color__item--6 " href="#"></a>
+                                    </span>
+                                    </div>
+                                    <div class="property__item">
+                                        <span class="property__key">Размеры:</span>
+                                        <span class="property__value">XS,S,M,L</span>
+                                    </div>
 
                                     <a class="btn_rd_default fancybox" href="https://www.creonagency.ru/#onClickpopupSubscribe"><span>Добавить в подборку</span></a>
 
@@ -81,71 +105,118 @@
                                                 <td>600 руб.</td>
                                             </tr>
                                         </table>
+                                        <p>Таблица в одну колонку</p>
+                                        <div class="table__price">
+                                            <table>
+                                                <tbody><tr>
+                                                    <td>Тираж</td>
+                                                    <td>Цена за штуку</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>до 5 штук</td>
+                                                    <td>от 3000 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>от 5 до 10 штук</td>
+                                                    <td>от 2900 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>от 10 до 20 штук</td>
+                                                    <td>от 2500 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>от 20 до 50 штук</td>
+                                                    <td>от 2100 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>от 50 штук</td>
+                                                    <td>от 1800 руб.</td>
+                                                </tr>
+                                                </tbody></table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
 
+
+
+
                             <div class="clear"></div>
                             <div class="caption__analog">Смотрите также другие промо материалы</div>
-                            <div class="carousel__analog">
-                                <div>
-                                    <div class="preview__analog">
-                                        <img src="/temp/analog1.jpg" alt="">
-                                        <div class="analog__name">
-                                            Толстовка теплая с мехом
+                            <div class="promo-product__list related__carousel">
+
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/analog1.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
+                                                Толстовка теплая с мехом
+                                            </div>
+                                            <div class="promo-product__text">
+                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
+                                            </div>
+                                            <div class="promo-product__btn">
+                                                <a href="#" class="btn_rd_default">
+                                                    <span>Подробнее</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="preview__analog">
-                                        <img src="/temp/analog2.jpg" alt="">
-                                        <div class="analog__name">
-                                            Стандартное платье прямого покроя
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/analog2.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
+                                                Стандартное платье прямого покроя
+                                            </div>
+                                            <div class="promo-product__text">
+                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
+                                            </div>
+                                            <div class="promo-product__btn">
+                                                <a href="#" class="btn_rd_default">
+                                                    <span>Подробнее</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="preview__analog">
-                                        <img src="/temp/analog3.jpg" alt="">
-                                        <div class="analog__name">
-                                            Костюм бортпроводника
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/analog3.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
+                                                Костюм бортпроводника
+                                            </div>
+                                            <div class="promo-product__text">
+                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
+                                            </div>
+                                            <div class="promo-product__btn">
+                                                <a href="#" class="btn_rd_default">
+                                                    <span>Подробнее</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <div class="preview__analog">
-                                        <img src="/temp/analog3.jpg" alt="">
-                                        <div class="analog__name">
-                                            Костюм бортпроводника2
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="preview__analog">
-                                        <img src="/temp/analog3.jpg" alt="">
-                                        <div class="analog__name">
-                                            Костюм бортпроводника3
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="advantages__service">
                                 <div class="advantages__caption">Преимущества услуги</div>
                                 <div class="advantages__images">
                                     <div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/images/advantages1.jpg" alt=""></div>
+                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages1.jpg" alt=""></div>
                                         <div class="advantages__name">Собстенное производство</div>
                                     </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/images/advantages2.jpg" alt=""></div>
+                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages2.jpg" alt=""></div>
                                         <div class="advantages__name">Высокое качество материалов</div>
                                     </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/images/advantages3.jpg" alt=""></div>
+                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages3.jpg" alt=""></div>
                                         <div class="advantages__name">Изготовление по индивидуальному заказу</div>
                                     </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/images/advantages4.jpg" alt=""></div>
+                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages4.jpg" alt=""></div>
                                         <div class="advantages__name">Оперативная доставка</div>
                                     </div>
                                 </div>
@@ -154,7 +225,7 @@
 
                             </div>
                             <div class="button__contact">
-                                <a class="btn_rd_default fancybox" href="https://www.creonagency.ru/#onClickpopupSubscribe"><span>Связаться с нами</span></a>
+                                <a class="btn_rd_default fancybox" href="#onClickpopupSubscribe"><span>Связаться с нами</span></a>
                             </div>
                             <div class="textedit">
                                 <h2>Дизайн промо-материалов</h2>

@@ -172,15 +172,15 @@
     z-index: 100;
 }
 
-.carousel__analog{
+.related__carousel{
     display: none;
     padding: 0 35px;
     box-sizing: border-box;
 }
-.carousel__analog.owl-carousel{
+.related__.owl-carousel{
     display: block;
 }
-.carousel__analog.owl-carousel .owl-item{
+.related__.owl-carousel .owl-item{
     text-align: center;
 }
 .slider__arrow{
@@ -205,7 +205,7 @@
     top: 132px;
     background: transparent url('/assets/template/images/promo/next.png');
 }
-.carousel__analog .slick-arrow {
+.related__carousel .slick-arrow {
     display: block;
     height: 32px;
     margin-top: -16px;
@@ -217,17 +217,17 @@
     border: 0 none;
     margin-bottom: 20px;
 }
-.carousel__analog .slick-prev{
+.related__carousel .slick-prev{
     left: 0;
     top: 132px;
     background: transparent url('/assets/template/images/promo/prev.png');
 }
-.carousel__analog .slick-next{
+.related__carousel .slick-next{
     right: 0;
     top: 132px;
     background: transparent url('/assets/template/images/promo/next.png');
 }
-.carousel__analog.slick-initialized .slick-slide{
+.related__carousel.slick-initialized .slick-slide{
     text-align: center;
 }
 .product__description .btn_rd_default{
@@ -239,4 +239,59 @@
 .product__description .btn_rd_default span{
     font-size: 18px;
     line-height: 28px;
+}
+.button__contact {
+    text-align: center;
+}
+.button__contact .btn_rd_default {
+    width: 244px;
+}
+.button__contact .btn_rd_default span {
+    height: 38px;
+    line-height: 38px;
+}
+.property__item {
+    margin-bottom: 10px;
+}
+.property__key {
+    color: #271f5e;
+    font-family: "Circe Bold",sans-serif;
+    font-size: 16px;
+}
+
+.property__value {
+    color: #271f5e;
+    font-family: "Circe Light";
+    font-size: 16px;
+}
+.color__item.active {
+    border: 1px solid #ffc61a
+}
+.color__item {
+    display: inline-block;
+    height: 20px;
+    margin-right: 6px;
+    transition: all 0.2s ease 0s;
+    width: 20px;
+    vertical-align: middle;
+    left: 7px;
+    border: 1px solid #269cd8
+}
+.color__item--1{
+    background-color:#2ab4d6;
+}
+.color__item--2{
+    background-color:#b2b5e5;
+}
+.color__item--3{
+    background-color:#64c346;
+}
+.color__item--4{
+    background-color:#f71e5b;
+}
+.color__item--5{
+    background-color:#faf0da;
+}
+.color__item--6{
+    background-color:#ebd807;
 }

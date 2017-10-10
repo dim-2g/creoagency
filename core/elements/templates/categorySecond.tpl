@@ -37,19 +37,19 @@
                                     <li class="b-filter__item last"><a href="#">Головные уборы</a></li>
                                 </ul>
                             </div>
-                            <div class="promo-category__list">
+                            <div class="promo-product__list">
 
-                                <div class="promo-category__item">
-                                    <div class="promo-category__card">
-                                        <div class="promo-category__image" style="background-image:url('/temp/promo/main/main1.jpg')"></div>
-                                        <div class="promo-category__info">
-                                            <div class="promo-category__caption">
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main1.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
                                                 Промо-форма
                                             </div>
-                                            <div class="promo-category__text">
+                                            <div class="promo-product__text">
                                                 Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
                                             </div>
-                                            <div class="promo-category__btn">
+                                            <div class="promo-product__btn">
                                                 <a href="#" class="btn_rd_default">
                                                     <span>Подробнее</span>
                                                 </a>
@@ -57,17 +57,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="promo-category__item">
-                                    <div class="promo-category__card">
-                                        <div class="promo-category__image" style="background-image:url('/temp/promo/main/main2.jpg')"></div>
-                                        <div class="promo-category__info">
-                                            <div class="promo-category__caption">
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main2.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
                                                 Ростовые куклы
                                             </div>
-                                            <div class="promo-category__text">
+                                            <div class="promo-product__text">
                                                 Текст про ростовые куклы. Текст про ростовые куклы. Ростовые куклы текст текст текст.
                                             </div>
-                                            <div class="promo-category__btn">
+                                            <div class="promo-product__btn">
                                                 <a href="#" class="btn_rd_default">
                                                     <span>Подробнее</span>
                                                 </a>
@@ -75,17 +75,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="promo-category__item">
-                                    <div class="promo-category__card">
-                                        <div class="promo-category__image" style="background-image:url('/temp/promo/main/main3.jpg')"></div>
-                                        <div class="promo-category__info">
-                                            <div class="promo-category__caption">
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main3.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
                                                 Стандартные платья с нанесением логотипа
                                             </div>
-                                            <div class="promo-category__text">
+                                            <div class="promo-product__text">
                                                 Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
                                             </div>
-                                            <div class="promo-category__btn">
+                                            <div class="promo-product__btn">
                                                 <a href="#" class="btn_rd_default">
                                                     <span>Подробнее</span>
                                                 </a>
@@ -93,17 +93,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="promo-category__item">
-                                    <div class="promo-category__card">
-                                        <div class="promo-category__image" style="background-image:url('/temp/promo/main/main4.jpg')"></div>
-                                        <div class="promo-category__info">
-                                            <div class="promo-category__caption">
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main4.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
                                                 Сувениры
                                             </div>
-                                            <div class="promo-category__text">
+                                            <div class="promo-product__text">
                                                 Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
                                             </div>
-                                            <div class="promo-category__btn">
+                                            <div class="promo-product__btn">
                                                 <a href="#" class="btn_rd_default">
                                                     <span>Подробнее</span>
                                                 </a>
@@ -111,17 +111,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="promo-category__item">
-                                    <div class="promo-category__card">
-                                        <div class="promo-category__image" style="background-image:url('/temp/promo/main/main5.jpg')"></div>
-                                        <div class="promo-category__info">
-                                            <div class="promo-category__caption">
+                                <div class="promo-product__item">
+                                    <div class="promo-product__card">
+                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main5.jpg')"></div>
+                                        <div class="promo-product__info">
+                                            <div class="promo-product__caption">
                                                 Комбинезоны с нанесением логотипа
                                             </div>
-                                            <div class="promo-category__text">
+                                            <div class="promo-product__text">
                                                 Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
                                             </div>
-                                            <div class="promo-category__btn">
+                                            <div class="promo-product__btn">
                                                 <a href="#" class="btn_rd_default">
                                                     <span>Подробнее</span>
                                                 </a>
@@ -129,7 +129,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="promo-category__item">
+                                <div class="promo-product__item">
                                     <div class="promo-question__card">
                                         <div class="promo-question__bg">
                                             <div class="promo-question__title">У Вас есть вопросы?</div>

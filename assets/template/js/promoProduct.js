@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.carousel__analog').owlCarousel({
+    $('.related__carousel').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
