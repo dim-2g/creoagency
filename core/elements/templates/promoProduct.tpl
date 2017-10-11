@@ -28,6 +28,22 @@
                             <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
                             <link href="assets/template/css/promoProduct.css" rel="stylesheet">
                             <script src="assets/template/js/promoProduct.js"></script>
+                            <div class="widget__cart">
+                                {$_modx->runSnippet('!msMiniCart', ['tpl'=>'@FILE:chunks/promo/msMiniCart.widget.tpl'])}
+                            </div>
+                            <div style="display: none">
+                              <div id="popup-cart">
+                                  {$_modx->runSnippet('!msCart', ['tpl'=>'@FILE:chunks/promo/msCart.popup.tpl'])}
+                              </div>
+                            </div>
+                            {*<div id="jGrowl" class="top-right jGrowl">
+                                <div class="jGrowl-notification"></div>
+                                <div class="jGrowl-notification alert ui-state-highlight ui-corner-all ms2-message-success" style="display: block;">
+                                    <button class="jGrowl-close">×</button>
+                                    <div class="jGrowl-header"></div>
+                                    <div class="jGrowl-message">В вашей подборке 1 промо-материал<br />Желаете <a href="#">оформить заявку</a>?</div>
+                                </div>
+                            </div>*}
                             <div class="product__card">
                                 <div class="product__foto">
                                     <div class="product__bigfoto">
@@ -42,36 +58,40 @@
                                 </div>
 
                                 <div class="product__description">
-                                    <div class="product__title">Печатаем наклейки на пленочной основе на собственном производстве.</div>
-                                    <p>Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. </p>
+                                    <form class="form-horizontal ms2_form" method="post">
+                                        <input type="hidden" name="id" value="{$_modx->resource.id}" />
+                                        <input type="hidden" value="1" maxlength="3" name="count" />
+                                        <div class="product__title">Печатаем наклейки на пленочной основе на собственном производстве.</div>
+                                        <p>Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. </p>
 
-                                    <div class="logo__title">Можем оформить в вашем стиле</div>
-                                    <div class="property__item">
-                                        <span class="property__key">Размеры (ВхГхШ):</span>
-                                        <span class="property__value">150 см х 30 см х 60 см</span>
-                                    </div>
-                                    <div class="property__item">
-                                        <span class="property__key">Материалы:</span>
-                                        <span class="property__value">алюминиевый каркас, пластик</span>
-                                    </div>
-                                    <div class="property__item">
-                                        <span class="property__key">Цвета:</span>
-                                        <span class="property__value">
-                                        <a class="color__item color__item--1 active" href="#"></a>
-                                        <a class="color__item color__item--2 " href="#"></a>
-                                        <a class="color__item color__item--3 " href="#"></a>
-                                        <a class="color__item color__item--4 " href="#"></a>
-                                        <a class="color__item color__item--5 " href="#"></a>
-                                        <a class="color__item color__item--6 " href="#"></a>
-                                    </span>
-                                    </div>
-                                    <div class="property__item">
-                                        <span class="property__key">Размеры:</span>
-                                        <span class="property__value">XS,S,M,L</span>
-                                    </div>
+                                        <div class="logo__title">Можем оформить в вашем стиле</div>
+                                        <div class="property__item">
+                                            <span class="property__key">Размеры (ВхГхШ):</span>
+                                            <span class="property__value">150 см х 30 см х 60 см</span>
+                                        </div>
+                                        <div class="property__item">
+                                            <span class="property__key">Материалы:</span>
+                                            <span class="property__value">алюминиевый каркас, пластик</span>
+                                        </div>
+                                        <div class="property__item">
+                                            <span class="property__key">Цвета:</span>
+                                            <span class="property__value">
+                                            <a class="color__item color__item--1 active" href="#"></a>
+                                            <a class="color__item color__item--2 " href="#"></a>
+                                            <a class="color__item color__item--3 " href="#"></a>
+                                            <a class="color__item color__item--4 " href="#"></a>
+                                            <a class="color__item color__item--5 " href="#"></a>
+                                            <a class="color__item color__item--6 " href="#"></a>
+                                        </span>
+                                        </div>
+                                        <div class="property__item">
+                                            <span class="property__key">Размеры:</span>
+                                            <span class="property__value">XS,S,M,L</span>
+                                        </div>
 
-                                    <a class="btn_rd_default fancybox" href="https://www.creonagency.ru/#onClickpopupSubscribe"><span>Добавить в подборку</span></a>
+                                        <button name="ms2_action" value="cart/add" class="btn_rd_default"><span>Добавить в подборку</span></button>
 
+                                    </form>
                                     <div class="table__price">
                                         <table>
                                             <tr>
