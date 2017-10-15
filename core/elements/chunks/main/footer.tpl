@@ -30,10 +30,6 @@
 {include 'file:chunks/forms/formAnyQuestions.tpl'}
 {include 'file:chunks/forms/popupOnClickSubscribeForm.tpl'}
 {include 'file:chunks/forms/popupSubscribeForm.tpl'}
-
-[[+MinifyX.javascript]]
-
-<script src="assets/template/js/jquery.fancybox_v3.js" type="text/javascript"></script>
 <div class="plashka" style="display:none;">
     <div class="width-site">
         <div class="top">
@@ -61,3 +57,4 @@
 {elseif $_modx->resource.context_key=='spb'}
     {include 'file:chunks/regional/spb/metriks.tpl'}
 {/if}
+<script>(function(){ var script = document.createElement('script');script.type = 'text/javascript';script.async = true;script.charset = 'utf-8';script.src = 'https://152фз.рф/widget/fc2418fafc5d587d51a874c31cfdb5a3';document.getElementsByTagName('head')[0].appendChild(script); })();</script><div id="fz_wrap"></div>

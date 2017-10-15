@@ -1,8 +1,18 @@
-<div class="item">
-    <div class="img">
-        <a href="{$_modx->makeUrl($_pls['id'])}"><img src="{$_pls['img']|phpthumbon:'w=195&h=195&zc=T&q=90'}" alt="{$pagetitle}" title="{$pagetitle} btl agency creon" width="195" height="195"></a>
-    </div>
-    <div class="text">
-        <h4><a href="{$_modx->makeUrl($_pls['id'])}">{$pagetitle}</a></h4>
+<div class="service__item" data-parent="{$serviceCategory|replace:" ":""}">
+    <div class="service__card">
+        <div class="service__image" style="background-image:url('{$_pls['img']|phpthumbon:'w=286&h=220&zc=T&q=90'}')"></div>
+        <div class="service__info">
+            <div class="service__caption">
+                <span>{$pagetitle}</span>
+            </div>
+            <div class="service__text">
+                {$description}
+            </div>
+            <div class="service__btn">
+                <a href="{$uri}" class="btn_rd_default">
+                    <span>Подробнее</span>
+                </a>
+            </div>
+        </div>
     </div>
 </div>

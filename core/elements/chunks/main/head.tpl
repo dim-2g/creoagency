@@ -44,35 +44,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/template/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/template/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/template/js/ion.rangeslider-2.0.3/ion.rangeslider-2.0.3/css/ion.rangeslider.css">
-    <link rel="stylesheet" href="assets/template/js/ion.rangeslider-2.0.3/ion.rangeslider-2.0.3/css/normalize.css">
-    <link rel="stylesheet" href="assets/template/js/ion.rangeslider-2.0.3/ion.rangeslider-2.0.3/css/ion.rangeslider.skinModern.css">
-    <link rel="stylesheet" href="assets/template/css/calculator.css">
-    <link rel="stylesheet" href="assets/template/js/swiper_slider/swiper.min.css">
-    <link rel="stylesheet" href="assets/template/js/jquery_flipster_master/dist/jquery.flipster.min.css">
-    <link rel="stylesheet" href="assets/template/css/style.font.css">
-    <link rel="stylesheet" href="assets/template/css/mainnew.css">
-    <link rel="stylesheet" href="assets/template/css/style_adaptive.css">
-    <link rel="stylesheet" href="assets/template/css/style_redizayn.css">
-    <link rel="stylesheet" href="assets/template/css/font-awesome-4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/template/css/innerService.css">
-    <script src="assets/template/js/jquery-1.11.3.js"></script>
-    <script src="assets/template/js/jquery-ui-1.10.4.custom.min.js"></script>
-    <script src="assets/template/js/jquery.shapeshift.min.js"></script>
-    <script src="assets/template/js/swiper_slider/swiper.jquery.min.js"></script>
-    <script src="assets/template/js/ion.rangeslider-2.0.3/ion.rangeslider-2.0.3/js/ion-rangeslider/ion.rangeslider.min.js"></script>
-    <script src="assets/template/js/owl.carousel.min.js"></script>
-    <script src="assets/template/js/form.js"></script>
-    <script src="assets/template/js/form_styler/jquery.formstyler.min.js"></script>
-    <script src="assets/template/js/device.min.js"></script>
-    <script src="assets/template/js/jquery.jtruncate.pack.js"></script>
-    <script src="assets/template/js/jquery.maskedinput.js"></script>
-    <script src="assets/template/js/new_popup.js"></script>
-    <script src="assets/template/js/tabs.js"></script>
-    <script src="assets/template/js/jquery_flipster_master/dist/jquery.flipster.min.js"></script>
-    <script src="assets/template/js/script.js"></script>
+    <link rel="stylesheet" href="assets/template/css/creon.min.css">
+    <script src="assets/template/js/creon.min.js"></script>
     <!--link href="assets/template/css/style.font.css" rel="stylesheet"-->
     <!--[if lte IE 10]>
     <link rel="stylesheet" type="text/css" data-page-id="{$_modx->resource.id}" href="assets/template/css/ie.css"/>

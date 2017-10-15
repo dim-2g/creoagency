@@ -5,10 +5,8 @@
 {/if}
 
 <p class="politics firstPolitics">
-    <small>Ваши данные не будут переданы третьим лицам</small>
-</p>
-<p class="politics">
     <small>
-        <a target="_blank" href="{$politics|url}" title="Политика конфиденциальности">подробнее о политике конфиденциальности</a>
+        <input type="checkbox" name="politics" checked="checked" class="noStyle">
+        Отправляя сообщение, я принимаю <a href="{$userAgreement|url}">пользовательское соглашение</a> и подтверждаю, что ознакомлен и согласен с <a href="{$politics|url}">политикой конфиденциальности</a> данного сайта
     </small>
 </p>

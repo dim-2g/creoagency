@@ -93,10 +93,8 @@
         {include 'file:chunks/main/footer.tpl'}
     </body>
 </html>
-<link href="assets/template/css/style.font.css" rel="stylesheet">
 
 {*ссылка на новые стили, чтобы не городить бардак в старых, и без того задрюченных стилях*}
-<link href="assets/template/css/innerService.css" rel="stylesheet">
 <script type="text/javascript">
     $(".filter_toggle").click(function(){
         $(this).next(".filter_dropdown").slideToggle(200);

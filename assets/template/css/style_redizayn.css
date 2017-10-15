@@ -1412,11 +1412,25 @@ article a img {
 /*перелинковка*/
 
 /*оформление ссылок на политике конфиденциальности*/
+
 .politics,.politics small,.politics a,.politics a:hover{
-    font-size: 0.8rem!important;
+    font-size: 1rem!important;
     color:#fff;
     margin: 5px 0px!important;
     text-align: left;
+}
+
+.fancybox-inner .politics{
+    width: 40%;
+    display: block;
+    margin: auto!important;
+    margin-top: 20px!important;
+}
+
+.politics input[type="checkbox"]{
+    display: inline-block;
+    padding-right: 20px;
+    width: 20px;
 }
 
 .politics::after{
