@@ -26,7 +26,6 @@
 
 
                             <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-                            <link href="assets/template/css/promoProduct.css" rel="stylesheet">
                             <script src="assets/template/js/promoProduct.js"></script>
                             <div class="widget__cart">
                                 {$_modx->runSnippet('!msMiniCart', ['tpl'=>'@FILE:chunks/promo/msMiniCart.widget.tpl'])}
@@ -42,9 +41,9 @@
                                         <img src="/temp/big_foto.jpg" alt="">
                                     </div>
                                     <div class="product__smallfotos">
-                                        <div class="product__smallfoto active"><a href="/temp/big_foto.jpg"><img src="/temp/foto_small1.jpg" alt=""></a></div>
-                                        <div class="product__smallfoto"><a href="/temp/big_foto2.jpg"><img src="/temp/foto_small2.jpg" alt=""></a></div>
-                                        <div class="product__smallfoto"><a href="/temp/big_foto.jpg"><img src="/temp/foto_small1.jpg" alt=""></a></div>
+                                        <div class="product__smallfoto active" data-src="/temp/big_foto.jpg" style="background-image: url('/temp/foto_small1.jpg')"></div>
+                                        <div class="product__smallfoto" data-src="/temp/big_foto2.jpg" style="background-image: url('/temp/foto_small2.jpg')"></div>
+                                        <div class="product__smallfoto" data-src="/temp/big_foto.jpg" style="background-image: url('/temp/foto_small1.jpg')"></div>
 
                                     </div>
                                 </div>
@@ -155,7 +154,7 @@
 
 
                             <div class="clear"></div>
-                            <div class="caption__analog">Смотрите также другие промо материалы</div>
+                            <div class="related__header">Смотрите также другие промо материалы</div>
                             <div class="promo-product__list related__carousel">
 
                                 <div class="promo-product__item">

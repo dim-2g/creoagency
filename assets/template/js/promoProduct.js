@@ -21,10 +21,14 @@ $(document).ready(function () {
 
 
 
-    $('.product__smallfoto a').click(function(){
+    $('.product__smallfoto').click(function(){
         $('.product__smallfoto').removeClass('active');
-        $('.product__bigfoto img').attr('src', $(this).attr('href'));
-        $(this).parents('.product__smallfoto').addClass('active');
+        var big_photo = $('.product__bigfoto img');
+        var img_src = $(this).attr('data-src');
+        big_photo.fadeOut(600, function(){
+            big_photo.attr('src', img_src).fadeIn(800);
+        });
+        $(this).addClass('active');
         return false;
     });
 
@@ -33,12 +37,19 @@ $(document).ready(function () {
         if (window.owlcart) {
             window.owlcart.trigger('destroy.owl.carousel');
         }
-        if (cart_item > 3){
+        if (cart_item > 3 ||  $(window).width()<900){
             window.owlcart = $('.popup-card__list').owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
-                items: 3,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    980: {
+                        items: 3
+                    }
+                },
                 navText: ['<span class="popup-card__arrow popup-card__arrow--prev"></span>', '<span class="popup-card__arrow popup-card__arrow--next"></span>'],
                 autoplay: false,
                 dots: false,
@@ -72,6 +83,9 @@ $(document).ready(function () {
         initPopupCart();
     });
     miniShop2.Callbacks.add('Cart.remove.response.success', 'promo', function (response) {
+        initPopupCart();
+    });
+    $('.cart__link').click(function(){
         initPopupCart();
     });
 });

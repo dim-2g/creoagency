@@ -18,16 +18,18 @@
 
 
                             <div class="p-order">
-                                {$_modx->runSnippet('!msCart', ['tpl'=>'@FILE:chunks/promo/msCart.order.tpl'])}
+                                {$_modx->runSnippet('!msCart', ['tpl'=>'@FILE:chunks/order/msCart.order.tpl'])}
                             </div>
-
-
-
-
-
-
-
                             <div class="clear"></div>
+
+                            {$_modx->runSnippet('!msOrder', [
+                            'tpl' => '@FILE:chunks/order/msOrder.tpl',
+                            ])}
+                            <div class="clear"></div>
+
+                            {$_modx->runSnippet('!msGetOrder', [
+                            'tpl' => '@FILE:chunks/order/msGetOrder.tpl',
+                            ])}
 
 
 
@@ -41,7 +43,6 @@
             </div><!-- .middle-->
         </div><!-- .wrapper -->
         {include 'file:chunks/main/footer.tpl'}
-        {*<script src="/assets/components/msminicartdynamic/js/web/msminicartdynamic.js"></script>*}
     </body>
 </html>
 <link href="assets/template/css/style.font.css" rel="stylesheet">
