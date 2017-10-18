@@ -1,4 +1,4 @@
-/*
+
 .promo-category__list{
     margin-left: -15px;
     margin-right: -15px;
@@ -122,7 +122,7 @@
 .promo-category__list-main .promo-category__btn .btn_rd_default{
     text-transform: uppercase;
 }
-*/
+
 .advantages__caption{
     text-align: center;
     color: #24a0d4;
@@ -525,12 +525,15 @@
 }
 .popup-card__list{
     text-align: center;
+    width: 600px;
+    padding: 0 20px;
 }
 .popup-card{
     display: inline-block;
     margin: 0 10px;
     width: 160px;
     vertical-align: top;
+    position: relative;
 
 }
 .cart-popup__header{
@@ -546,4 +549,108 @@
     line-height: 120%;
     height: 48px;
     overflow: hidden;
+}
+.popup-card__remove{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 24px;
+    height: 24px;
+    background: transparent url('/assets/template/images/promo/popup-card__close.jpg') left top no-repeat;
+    border: 0 none;
+}
+.popup-card__remove:hover {
+    background: transparent url('/assets/template/images/promo/popup-card__close.jpg') right top no-repeat;
+}
+.popup-card__arrow{
+    border: 0 none;
+    color: transparent;
+    display: block;
+    height: 24px;
+    margin-bottom: 20px;
+    position: absolute;
+    width: 14px;
+    z-index: 100;
+}
+.popup-card__arrow--prev {
+    background: transparent url("/assets/template/images/promo/popup-card__arrows.png") left top no-repeat;
+    left: 0px;
+    top: 75px;
+}
+.popup-card__arrow--next {
+    background: transparent url("/assets/template/images/promo/popup-card__arrows.png") right top no-repeat;
+    right: 0px;
+    top: 75px;
+}
+
+
+.order__count {
+    color: #2f3587;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+.order__count span{
+    font-weight:bold;
+}
+
+
+
+.order__list * {
+    box-sizing: border-box;
+}
+.order__list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.order__list::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.order__item {
+    float: left;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 33.3%;
+}
+.order__card {
+    height: 290px;
+    margin: 0 auto;
+    max-width: 290px;
+    overflow: hidden;
+    position: relative;
+}
+.order__image {
+    background-position: 0 center;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.order__info {
+    background: transparent url("/assets/template/images/promo/caption__gradient.png") repeat-x scroll left top;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 45px 18px 12px;
+    position: absolute;
+    right: 0;
+    transform: translateY(204px);
+    transition: all 0.3s ease 0s;
+}
+
+.order__caption {
+    font-family: "Circe Bold",sans-serif;
+    font-size: 16px;
+    line-height: 110%;
+    margin-bottom: 10px;
+    min-height: 32px;
+    padding-bottom: 3px;
+    text-align: center;
 }

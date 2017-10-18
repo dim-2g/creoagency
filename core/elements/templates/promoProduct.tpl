@@ -13,7 +13,7 @@
 {/if}
 <!DOCTYPE html>
 <html>
-    {include 'file:chunks/main/head.tpl'}
+    {include 'file:chunks/main/head.uncompress.tpl'}
     <body class="page_sidebar">
         <div class="wrapper">
             {include 'file:chunks/main/headerRd.tpl'}
@@ -36,14 +36,6 @@
                                   {$_modx->runSnippet('!msCart', ['tpl'=>'@FILE:chunks/promo/msCart.popup.tpl'])}
                               </div>
                             </div>
-                            {*<div id="jGrowl" class="top-right jGrowl">
-                                <div class="jGrowl-notification"></div>
-                                <div class="jGrowl-notification alert ui-state-highlight ui-corner-all ms2-message-success" style="display: block;">
-                                    <button class="jGrowl-close">×</button>
-                                    <div class="jGrowl-header"></div>
-                                    <div class="jGrowl-message">В вашей подборке 1 промо-материал<br />Желаете <a href="#">оформить заявку</a>?</div>
-                                </div>
-                            </div>*}
                             <div class="product__card">
                                 <div class="product__foto">
                                     <div class="product__bigfoto">
@@ -273,6 +265,7 @@
             </div><!-- .middle-->
         </div><!-- .wrapper -->
         {include 'file:chunks/main/footer.tpl'}
+        {*<script src="/assets/components/msminicartdynamic/js/web/msminicartdynamic.js"></script>*}
     </body>
 </html>
 <link href="assets/template/css/style.font.css" rel="stylesheet">
