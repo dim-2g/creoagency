@@ -29,7 +29,8 @@
 }
 .promo-category__image{
     height: 100%;
-    background-position: 0 center;
+    background-position: top center;
+    background-size: cover;
 }
 .promo-category__item a{
     position: static;
@@ -55,6 +56,8 @@
 .promo-category__list-main .promo-category__caption{
     font-size: 22px;
     text-transform: uppercase;
+    height: 70px;
+    line-height: 70px;
 }
 
 .promo-category__info{
@@ -82,9 +85,16 @@
 
 .promo-category__card:hover .promo-category__caption{
     border-bottom: 1px #ffc61a solid;
+    height: auto;
+    line-height: normal;
 }
 .promo-category__list-main .promo-category__info{
-    padding-top: 52px;
+    padding-top: 18px;
+}
+.promo-category__list-main .promo-category__info span{
+    line-height: 120%;
+    vertical-align: middle;
+    display: inline-block;
 }
 .promo-category__list-main .promo-category__card:hover .promo-category__info{
     padding-top: 20px;
@@ -563,6 +573,10 @@
 .promo-product__list *{
     box-sizing: border-box;
 }
+.promo-product__list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .promo-product__item{
     float: left;
     width: 33.3%;
@@ -591,7 +605,7 @@
 
 .promo-product__image{
     height: 100%;
-    background-position: 0 center;
+    background-position: center top;
     background-size: cover;
 }
 .promo-product__item a{
@@ -1172,4 +1186,44 @@
         width: 100%;
         padding: 0;
     }
+}
+
+.content ul.category-menu__list {
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+}
+.category-menu__list .category-menu__item {
+    float: left;
+    text-align: center;
+    vertical-align: top;
+    width: auto;
+    margin-right: 20px;
+}
+.category-menu__list .category-menu__item:last-child {
+    margin-right: 0px;
+}
+.category-menu__list .category-menu__item a{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #2f3587;
+    color: #2f3587;
+    display: inline-block;
+    font: 18px "Circe Bold";
+    margin: 5px 0 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+.category-menu__list .category-menu__item.active a {
+    cursor: text;
+}
+.category-menu__list .category-menu__item.active a, .category-menu__list .category-menu__item:hover a {
+    background: #2f3587 none repeat scroll 0 0;
+    border: 1px solid #2f3587;
+    color: #fff;
+}
+.category-menu__list:after{
+    content: "";
+    display: table;
+    clear: both;
 }

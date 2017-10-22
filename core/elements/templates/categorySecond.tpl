@@ -27,159 +27,52 @@
 
                             <link href="assets/template/css/common.css" rel="stylesheet">
                             <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-                            <div class="b-filter">
-                                <ul class="b-filter__list">
-                                    <li class="b-filter__item current active"><a href="#">Все</a></li>
-                                    <li class="b-filter__item first"><a href="#">Комбинезоны</a></li>
-                                    <li class="b-filter__item"><a href="#">Платья</a></li>
-                                    <li class="b-filter__item"><a href="#" >Футболки</a></li>
-                                    <li class="b-filter__item"><a href="#" >Толстовки</a></li>
-                                    <li class="b-filter__item last"><a href="#">Головные уборы</a></li>
+                            <div class="category-menu">
+                                <ul class="category-menu__list">
+                                    <li class="category-menu__item current"><a href="{$_modx->resource.parent | url}">Все</a></li>
+                                    {$_modx->runSnippet('pdoMenu', [
+                                    'parents'=>$_modx->resource.parent,
+                                    'outerTpl'=>'@INLINE {$wrapper}',
+                                    'rowClass'=>'category-menu__item',
+                                    'level'=>1,
+                                    'templates'=>'42,39,53',
+                                    ])}
                                 </ul>
                             </div>
                             <div class="promo-product__list">
-
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main1.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Промо-форма
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main2.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Ростовые куклы
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст про ростовые куклы. Текст про ростовые куклы. Ростовые куклы текст текст текст.
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main3.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Стандартные платья с нанесением логотипа
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main4.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Сувениры
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/promo/main/main5.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Комбинезоны с нанесением логотипа
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {$_modx->runSnippet('ms2GalleryResources', [
+                                'depth'=>0,
+                                'sortby'=>'menuindex',
+                                'sortdir'=>'ASC',
+                                'tpl'=>'@FILE chunks/promo/categoryMainItem.tpl'
+                                ])}
                                 <div class="promo-product__item">
                                     <div class="promo-question__card">
                                         <div class="promo-question__bg">
                                             <div class="promo-question__title">У Вас есть вопросы?</div>
                                             <div class="promo-question__image"></div>
-                                            <a href="#" class="btn_rd_default">
+                                            <a href="#popup" class="btn_rd_default fancybox">
                                                 <span>Закажите обратный звонок!</span>
                                             </a>
                                             <div class="promo-question__lead">Мы перезвоним!</div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div class="advantages__service">
-                                <div class="advantages__caption">Преимущества услуги</div>
-                                <div class="advantages__images">
-                                    <div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages1.jpg" alt=""></div>
-                                        <div class="advantages__name">Собстенное производство</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages2.jpg" alt=""></div>
-                                        <div class="advantages__name">Высокое качество материалов</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages3.jpg" alt=""></div>
-                                        <div class="advantages__name">Изготовление по индивидуальному заказу</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages4.jpg" alt=""></div>
-                                        <div class="advantages__name">Оперативная доставка</div>
+                            {if $_modx->resource.promo_advantages_for_usluga}
+                                <div class="advantages__service">
+                                    <div class="advantages__caption">Преимущества услуги</div>
+                                    <div class="advantages__images">
+                                        {foreach ($_modx->resource.promo_advantages_for_usluga | fromJSON) as $item}<div class="advantages__item"><div class="advantages__image"><img src="{$item.image}" alt=""></div><div class="advantages__name">{$item.description}</div></div>{/foreach}
+                                    </div>
+                                    <div class="advantages__signature">Для ребят из нашей команды не существует невыполнимых задач!
                                     </div>
                                 </div>
-                                <div class="advantages__signature">Для ребят из нашей команды не существует невыполнимых задач!
-                                </div>
-                            </div>
+                            {/if}
 
                             <div class="textedit">
-                                <h2>Дизайн промо-материалов</h2>
-                                <p>Креативный и эффективный дизайн промо-материалов – это залог успеха рекламной кампании, он способен привлекать потребителей и заставлять их делать выбор в пользу данной продукции. Мы предлагаем разработку рекламных материалов, как для разовой рекламной акции, так и постоянных промо-материалов. Наши специалисты учитывают специфику и качество контакта материала с потребителями. Например, буклет, красиво и ярко оформленный, предназначен для прочтения потребителем, его должно быть приятно держать в руках, разглядывать изображения. Если же это наружная реклама – время контакта составляет всего несколько секунд. </p>
-                                <p>В любом случае, мы стремимся создать яркий и креативный образ, следуя имиджу бренда, используем интересные и нестандартные формы и решения. </p>
-                                <h2>Изготовление промо-материалов </h2>
-                                <p>Для изготовления промо-материалов в нашем распоряжении имеется современное высокотехнологичное оборудование. Мы примем заказ на изготовление рекламной продукции в любых объемах, гарантируя оптимальное соотношение цены и качества. Изготовленные нами на должном уровне промо-материалы позволяют получить максимально эффективную отдачу в виде привлечения внимания покупателей и стимулирования продаж. </p>
-                            </div>
-
-                            <div class="perelink">
-                                <span>Также вас могут заинтересовать: </span>
-                                <a href="https://www.creonagency.ru/promouteri-dlya-reklami.html" alt="промоутеры" title="промоутеры">промоутеры</a>
-                                <span>, </span>
-                                <a href="https://www.creonagency.ru/promo-modeli-na-vyistavku.html " alt="модели на выставку" title="модели на выставку">модели на выставку</a>
-                                <span>, </span>
-                                <a href="https://www.creonagency.ru/animatoryi.html " alt="аниматоры на праздник" title="аниматоры на праздник">аниматоры на праздник</a>
+                                {$_modx->resource.content}
                             </div>
 
                         </div>

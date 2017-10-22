@@ -23,7 +23,7 @@
     </div>
     <div class="clear"></div>
 </div>
-        
+<script src="assets/template/js/jquery.fancybox_v3.js" type="text/javascript"></script>
 {include 'file:chunks/forms/success.tpl'}
 {include 'file:chunks/forms/formPopupCall.tpl'}
 {include 'file:chunks/forms/formGetConsult.tpl'}

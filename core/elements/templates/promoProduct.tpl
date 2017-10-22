@@ -37,23 +37,17 @@
                             </div>
                             <div class="product__card">
                                 <div class="product__foto">
-                                    <div class="product__bigfoto">
-                                        <img src="/temp/big_foto.jpg" alt="">
-                                    </div>
-                                    <div class="product__smallfotos">
-                                        <div class="product__smallfoto active" data-src="/temp/big_foto.jpg" style="background-image: url('/temp/foto_small1.jpg')"></div>
-                                        <div class="product__smallfoto" data-src="/temp/big_foto2.jpg" style="background-image: url('/temp/foto_small2.jpg')"></div>
-                                        <div class="product__smallfoto" data-src="/temp/big_foto.jpg" style="background-image: url('/temp/foto_small1.jpg')"></div>
-
-                                    </div>
+                                    {$_modx->runSnippet('msGallery', [
+                                        'tpl'=>'@FILE:chunks/promo/msGallery.product.tpl',
+                                    ])}
                                 </div>
 
                                 <div class="product__description">
                                     <form class="form-horizontal ms2_form" method="post">
                                         <input type="hidden" name="id" value="{$_modx->resource.id}" />
                                         <input type="hidden" value="1" maxlength="3" name="count" />
-                                        <div class="product__title">Печатаем наклейки на пленочной основе на собственном производстве.</div>
-                                        <p>Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. Текстовое описание печати и возможностей. </p>
+                                        <div class="product__title">{$_modx->resource.pagetitle}</div>
+                                        <p>{$_modx->resource.introtext}</p>
 
                                         <div class="logo__title">Можем оформить в вашем стиле</div>
                                         <div class="property__item">
@@ -156,103 +150,31 @@
                             <div class="clear"></div>
                             <div class="related__header">Смотрите также другие промо материалы</div>
                             <div class="promo-product__list related__carousel">
-
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/analog1.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Толстовка теплая с мехом
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/analog2.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Стандартное платье прямого покроя
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="promo-product__item">
-                                    <div class="promo-product__card">
-                                        <div class="promo-product__image" style="background-image:url('/temp/analog3.jpg')"></div>
-                                        <div class="promo-product__info">
-                                            <div class="promo-product__caption">
-                                                Костюм бортпроводника
-                                            </div>
-                                            <div class="promo-product__text">
-                                                Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст. Текст про промо-формы. Текст про промо-формы. Промо-формы текст текст текст.
-                                            </div>
-                                            <div class="promo-product__btn">
-                                                <a href="#" class="btn_rd_default">
-                                                    <span>Подробнее</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                {$_modx->runSnippet('msProducts',[
+                                'parents'=>$_modx->resource.parent,
+                                'showUnpublished' => 1,
+                                'limit' => 0,
+                                'tpl' => '@FILE chunks/promo/productItem.tpl',
+                                'resources'=> '-516',
+                                ])}
                             </div>
 
-                            <div class="advantages__service">
-                                <div class="advantages__caption">Преимущества услуги</div>
-                                <div class="advantages__images">
-                                    <div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages1.jpg" alt=""></div>
-                                        <div class="advantages__name">Собстенное производство</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages2.jpg" alt=""></div>
-                                        <div class="advantages__name">Высокое качество материалов</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages3.jpg" alt=""></div>
-                                        <div class="advantages__name">Изготовление по индивидуальному заказу</div>
-                                    </div><div class="advantages__item">
-                                        <div class="advantages__image"><img src="/assets/template/images/promo/advantages4.jpg" alt=""></div>
-                                        <div class="advantages__name">Оперативная доставка</div>
+                            {if $_modx->resource.promo_advantages_for_usluga}
+                                <div class="advantages__service">
+                                    <div class="advantages__caption">Преимущества услуги</div>
+                                    <div class="advantages__images">
+                                        {foreach ($_modx->resource.promo_advantages_for_usluga | fromJSON) as $item}<div class="advantages__item"><div class="advantages__image"><img src="{$item.image}" alt=""></div><div class="advantages__name">{$item.description}</div></div>{/foreach}
+                                    </div>
+                                    <div class="advantages__signature">Для ребят из нашей команды не существует невыполнимых задач!
                                     </div>
                                 </div>
-                                <div class="advantages__signature">Для ребят из нашей команды не существует невыполнимых задач!
-                                </div>
+                            {/if}
 
-                            </div>
                             <div class="button__contact">
-                                <a class="btn_rd_default fancybox" href="#onClickpopupSubscribe"><span>Связаться с нами</span></a>
+                                <a class="btn_rd_default fancybox" href="#popup"><span>Связаться с нами</span></a>
                             </div>
                             <div class="textedit">
-                                <h2>Дизайн промо-материалов</h2>
-                                <p>Креативный и эффективный дизайн промо-материалов – это залог успеха рекламной кампании, он способен привлекать потребителей и заставлять их делать выбор в пользу данной продукции. Мы предлагаем разработку рекламных материалов, как для разовой рекламной акции, так и постоянных промо-материалов. Наши специалисты учитывают специфику и качество контакта материала с потребителями. Например, буклет, красиво и ярко оформленный, предназначен для прочтения потребителем, его должно быть приятно держать в руках, разглядывать изображения. Если же это наружная реклама – время контакта составляет всего несколько секунд. </p>
-                                <p>В любом случае, мы стремимся создать яркий и креативный образ, следуя имиджу бренда, используем интересные и нестандартные формы и решения. </p>
-
-
-                            </div>
-
-                            <div class="perelink">
-                                <span>Также вас могут заинтересовать: </span>
-                                <a href="https://www.creonagency.ru/promouteri-dlya-reklami.html" alt="промоутеры" title="промоутеры">промоутеры</a>
-                                <span>, </span>
-                                <a href="https://www.creonagency.ru/promo-modeli-na-vyistavku.html " alt="модели на выставку" title="модели на выставку">модели на выставку</a>
-                                <span>, </span>
-                                <a href="https://www.creonagency.ru/animatoryi.html " alt="аниматоры на праздник" title="аниматоры на праздник">аниматоры на праздник</a>
+                                {$_modx->resource.content}
                             </div>
 
                         </div>
