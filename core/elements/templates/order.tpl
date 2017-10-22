@@ -13,7 +13,6 @@
 
 
                             <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-                            <link href="assets/template/css/promoProduct.css" rel="stylesheet">
                             <script src="assets/template/js/promoProduct.js"></script>
 
 

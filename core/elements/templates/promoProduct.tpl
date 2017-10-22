@@ -13,7 +13,8 @@
 {/if}
 <!DOCTYPE html>
 <html>
-    {include 'file:chunks/main/head.uncompress.tpl'}
+    {*include 'file:chunks/main/head.uncompress.tpl'*}
+    {include 'file:chunks/main/head.tpl'}
     <body class="page_sidebar">
         <div class="wrapper">
             {include 'file:chunks/main/headerRd.tpl'}
@@ -25,16 +26,10 @@
                         <div class="content full_width" style="margin-bottom: 20px;">
 
 
-                            <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-                            <script src="assets/template/js/promoProduct.js"></script>
-                            <div class="widget__cart">
-                                {$_modx->runSnippet('!msMiniCart', ['tpl'=>'@FILE:chunks/promo/msMiniCart.widget.tpl'])}
-                            </div>
-                            <div style="display: none">
-                              <div id="popup-cart">
-                                  {$_modx->runSnippet('!msCart', ['tpl'=>'@FILE:chunks/promo/msCart.popup.tpl'])}
-                              </div>
-                            </div>
+                            {*<link href="assets/template/css/promomaterialy.css" rel="stylesheet">*}
+
+                            {include 'file:chunks/promo/flyCart.tpl'}
+
                             <div class="product__card">
                                 <div class="product__foto">
                                     {$_modx->runSnippet('msGallery', [
@@ -144,9 +139,6 @@
                             </div>
 
 
-
-
-
                             <div class="clear"></div>
                             <div class="related__header">Смотрите также другие промо материалы</div>
                             <div class="promo-product__list related__carousel">
@@ -155,7 +147,7 @@
                                 'showUnpublished' => 1,
                                 'limit' => 0,
                                 'tpl' => '@FILE chunks/promo/productItem.tpl',
-                                'resources'=> '-516',
+                                'resources'=> '-' ~ $_modx->resource.id,
                                 ])}
                             </div>
 

@@ -25,8 +25,8 @@
                         <div class="content full_width" style="margin-bottom: 20px;">
 
 
-                            <link href="assets/template/css/common.css" rel="stylesheet">
-                            <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
+                            {*<link href="assets/template/css/promomaterialy.css" rel="stylesheet">*}
+                            {include 'file:chunks/promo/flyCart.tpl'}
                             <div class="category-menu">
                                 <ul class="category-menu__list">
                                     <li class="category-menu__item current"><a href="{$_modx->resource.parent | url}">Все</a></li>

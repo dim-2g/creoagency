@@ -24,9 +24,8 @@
                     <div class="container">
                         <div class="content full_width" style="margin-bottom: 20px;">
 
-                            <link href="assets/template/css/common.css" rel="stylesheet">
-                            <link href="assets/template/css/promomaterialy.css" rel="stylesheet">
-
+                            {*<link href="assets/template/css/promomaterialy.css" rel="stylesheet">*}
+                            {include 'file:chunks/promo/flyCart.tpl'}
                             <div class="promo-category__list promo-category__list-main">
                                 {$_modx->runSnippet('ms2GalleryResources', [
                                     'depth'=>0,
