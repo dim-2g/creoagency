@@ -1,5 +1,5 @@
 $(document).ready(function () {
-/*
+
     var related_item = $('.promo-product__item').length;
     if (related_item > 2){
         $('.related__carousel').owlCarousel({
@@ -21,7 +21,7 @@ $(document).ready(function () {
             autoplayTimeout: 2000
         });
     }
-*/
+
 
 
 
