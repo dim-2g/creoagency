@@ -109,6 +109,8 @@
     }
     .promo-category__card .promo-category__caption{
         border-bottom: 1px #ffc61a solid;
+        height: auto;
+        line-height: normal;
     }
 }
 .promo-category__text {
@@ -441,7 +443,7 @@
 }
 
 .related__carousel{
-    display: none;
+    /*display: none;*/
     padding: 0 35px;
     box-sizing: border-box;
 }
@@ -660,11 +662,14 @@
         height: 100%;
         background: rgba(47,53,135,0.75);
         transition: all 0.3s ease 0s;
-        padding-top: 20px;
+        padding-top: 14px;
         transform: translateY(0);
     }
     .promo-product__card .promo-product__caption{
         border-bottom: 1px #ffc61a solid;
+    }
+    .promo-product__card:hover .promo-product__info{
+        padding-top: 14px;
     }
 }
 .promo-product__text {
@@ -779,6 +784,13 @@
     box-sizing: border-box;
     line-height: 150%;
     padding-top: 19px;
+}
+@media (max-width: 993px){
+    #jGrowl .ms2-message-error,
+    #jGrowl .ms2-message-success{
+        min-width: 100%;
+        font-size: 16px;
+    }
 }
 #jGrowl .ms2-message-success:before{
     width: 28px;

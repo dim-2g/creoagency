@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="assets/template/css/style_redizayn.css">
     <link rel="stylesheet" href="assets/template/css/font-awesome-4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/template/css/innerService.css">
+    <link rel="stylesheet" href="assets/template/css/promomaterialy.css">
     <script src="assets/template/js/jquery-1.11.3.js"></script>
     <script src="assets/template/js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="assets/template/js/jquery.shapeshift.min.js"></script>
